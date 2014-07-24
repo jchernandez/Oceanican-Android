@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal" />
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_progressBar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:id="@+id/detail_view"
+        android:scrollbars="none"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/imageHandler"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:id="@+id/nameDetail"
+                android:textColor="#ffff"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:background="#80000000"/>
+          <include
+              android:layout_marginTop="10dp"
+              layout="@layout/info_card_view"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/adop_status"/>
+
+            <include
+                android:layout_marginTop="10dp"
+                layout="@layout/info_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/adop_detail"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
