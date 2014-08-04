@@ -17,21 +17,23 @@
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/print"
+                android:id="@+id/water_mark"
+                android:layout_weight="1" />
             <TextView
                 android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:text="Title"
                 android:textStyle="bold"
                 android:id="@+id/card_title"
                 android:layout_weight="6"
                 android:typeface="monospace" />
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/print"
-                android:layout_weight="1" />
+
         </LinearLayout>
 
         <View
@@ -43,9 +45,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_margin="4dp"
             android:text="Body"
+            android:textSize="18sp"
             android:id="@+id/card_body"
             android:ellipsize="marquee" />
 

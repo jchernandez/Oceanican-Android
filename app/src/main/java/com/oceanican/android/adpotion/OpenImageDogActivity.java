@@ -14,7 +14,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
-import com.oceanican.app.R;
+import com.oceanican.android.R;
 
 public class OpenImageDogActivity extends SherlockActivity {
 

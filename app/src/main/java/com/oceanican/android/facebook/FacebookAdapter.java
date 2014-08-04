@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
-import com.oceanican.app.R;
+import com.oceanican.android.R;
 
 import java.util.ArrayList;
 

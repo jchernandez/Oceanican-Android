@@ -4,7 +4,6 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.oceanican.android.adpotion.AdoptListFragment;
 import com.oceanican.android.facebook.FacebookListFragment;
-import com.oceanican.app.R;
 
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.Fragment;

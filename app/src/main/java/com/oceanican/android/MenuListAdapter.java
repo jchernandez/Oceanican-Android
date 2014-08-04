@@ -8,7 +8,6 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.oceanican.app.R;
 
 public class MenuListAdapter extends BaseAdapter {
 

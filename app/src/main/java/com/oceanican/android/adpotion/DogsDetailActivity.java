@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.oceanican.app.R;
+import com.oceanican.android.R;
 
 import java.util.ArrayList;
 

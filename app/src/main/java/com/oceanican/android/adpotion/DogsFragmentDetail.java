@@ -23,7 +23,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
-import com.oceanican.app.R;
+import com.oceanican.android.R;
 
 
 public class DogsFragmentDetail extends SherlockFragment{
@@ -52,28 +52,7 @@ public class DogsFragmentDetail extends SherlockFragment{
         TextView name = (TextView) view.findViewById(R.id.nameDetail);
 
         name.setText(item.getNombre());
-        /*
-        TextView name = (TextView) view.findViewById(R.id.nameDetail);
-        TextView age = (TextView) view.findViewById(R.id.detail_age);
-        TextView description = (TextView) view.findViewById(R.id.description);
-        age.append(item.getEdad());
 
-
-        String statusText="";
-
-        if(item.getFecha()!=null)
-            statusText ="- Fecha de ingreso:"+item.getFecha()+"\n";
-
-        statusText= statusText+getString(R.string.size)+" "+item.getTamanio()+"\n\n";
-        if(item.getDesparcitado())
-            statusText= statusText+"- ✔ "+getString(R.string.desparacitado)+"\n";
-        else
-            statusText= statusText+"- ✘ "+getString(R.string.desparacitado)+"\n";
-
-        statusText=statusText+"\n"+item.getDescripcion();
-
-        description.setText(Html.fromHtml("<b>"+item.getGenero()+"</b>"));
-        description.append("\n\n" + statusText);*/
 
         View descriptCard=view.findViewById(R.id.adop_detail);
         View statusCard=view.findViewById(R.id.adop_status);
@@ -81,8 +60,7 @@ public class DogsFragmentDetail extends SherlockFragment{
         TextView statusTitle = (TextView) statusCard.findViewById(R.id.card_title);
         TextView statusBody = (TextView) statusCard.findViewById(R.id.card_body);
 
-        statusTitle.setText(getString(R.string.adoptable));
-        statusTitle.setTextColor(getResources().getColor(R.color.green));
+        statusTitle.setText(getString(R.string.characteristics));
 
 
         String statusText="";
@@ -97,21 +75,16 @@ public class DogsFragmentDetail extends SherlockFragment{
             statusText= statusText+"✘ "+getString(R.string.desparacitado)+"\n\n";
 
         statusText=statusText+item.getColor();
-
-        if(item.getGenero().toLowerCase().equals("macho"))
-            statusBody.setText(Html.fromHtml("<font color=\""+getResources().getColor(R.color.blue)+"\"><b>"+item.getGenero()+"</b></font><br/><br/>"));
-        else
-            statusBody.setText(Html.fromHtml("<font color=\"" + getResources().getColor(R.color.pink) + "\"><b>" + item.getGenero() + "</b></font><br/><br/>"));
+        statusBody.setText(item.getEdad()+", "+item.getGenero()+"\n\n");
 
         statusBody.append(statusText);
 
-      //  statusText=statusText+"\n"+item.getDescripcion();
 
 
         TextView descriptTilte = (TextView) descriptCard.findViewById(R.id.card_title);
         TextView descriptBody = (TextView) descriptCard.findViewById(R.id.card_body);
 
-        descriptTilte.setText(getString(R.string.details));
+        descriptTilte.setText(getString(R.string.description));
         descriptBody.setText(item.getDescripcion());
 
         getBitmap();

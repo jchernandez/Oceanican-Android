@@ -9,7 +9,7 @@ import android.support.v4.view.ViewPager;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
-import com.oceanican.app.R;
+import com.oceanican.android.R;
 
 import java.util.ArrayList;
 

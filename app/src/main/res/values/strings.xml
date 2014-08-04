@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--- llave para el uso de mapas  -->
+    <string name="maps_apikey">AIzaSyCi1V4hKdktdafRdRD46ISYyazVn0KOwRA</string>
+
+
     <string name="app_name">Oceanican</string>
     <string name="action_settings">Settings</string>
     <string name="adopcion">Adopción</string>
     <string name="facebook">Facebook</string>
     <string name="twitter">Twitter</string>
-    <string name="details">Detalles</string>
+    <string name="description">Descripción</string>
     <string name="age">Edad: </string>
     <string name="date">Fecha de Ingreso: </string>
     <string name="desparacitado">Desparasitado</string>
@@ -15,10 +19,26 @@
     <string name="adoptable">Adoptable</string>
     <string name="oceanican">Oceanican</string>
     <string name="open_facebook">Abrir en Facebook</string>
+    <string name="get_direction">Como Llegar</string>
+    <string name="characteristics">Caracterísitcas</string>
+    <string name="donation_message">Gracias a tus donaciones podemos seguir ayudando a los peludos
+El cuidado de los peludos implica uso de muchos recursos por lo cuál agradecemos cualquier ayuda que pueda ser brindada.
+Puedes realizar donaciones a través de este sitio mediante PayPal. </string>
+
+    <string name="contactOceanican">Tel: 5524969063,5537027180 \nMail:</string>
+    <string name="direction">Pirámide 19 Col. Santo Tomás Ajusco de Tlalpan \nCP: 14710 </string>
+
+
+    <!--- errors-->
+    <string name="errorLine">Error al obtener la ruta</string>
+
     <string-array name="acercaDe">
-        <item>Acerca De</item>
+        <item>Nosotros</item>
         <item>Contacto</item>
         <item>Donaciones</item>
     </string-array>
+
+    <string name="linkDirections">http://maps.googleapis.com/maps/api/directions/json?origin=19.2103404,-99.2102756&amp;destination=%s&amp;sensor=true</string>
+
 
 </resources>
